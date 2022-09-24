@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="editor.css" />
+  </head>
+  <body>
+    <form>
+      <h1>Notepad</h1>
+      <div>
+        <select>
+          <!--id="look"-->
+          <option value="Arial">Arial</option>
+          <option value="Calibri">Calibri</option>
+          <option value="Comic Sans MS">Comic Sans MS</option>
+          <option value="Algerian">Algerian</option>
+          <option value="Comfortaa">Comfortaa</option>
+          <option value="Roboto">Roboto</option>
+          <option value="Times New Roman">Times New Roman</option>
+        </select>
+        <select>
+          <!--id="size"-->
+          <option value="">10</option>
+          <option value="">12</option>
+          <option value="">14</option>
+          <option value="">16</option>
+          <option value="">18</option>
+          <option value="">20</option>
+          <option value="">22</option>
+          <option value="">24</option>
+          <option value="">26</option>
+          <option value="">28</option>
+          <option value="">30</option>
+        </select>
+      </div>
+      <div>
+        <button id="menu-button">
+          <img
+            src="./iconhub/curve-arrow-left-sqaure-2.svg"
+            alt="undo"
+            height="30px"
+            width="30px" />
+        </button>
+        <button id="menu-button">
+          <img
+            src="./iconhub/curve-arrow-right-square.svg"
+            alt="redo"
+            height="30px"
+            width="30px" />
+        </button>
+        <button id="menu-button">
+          <img src="./iconhub/bold.svg" alt="bold" height="30px" width="30px" />
+        </button>
+        <button id="menu-button">
+          <img src="./iconhub/italic.svg" alt=italic" height= 30px width=30px/>
+        </button>
+        <button id="menu-button">
+          <img
+            src="./iconhub/underline.svg"
+            alt="underline"
+            height="30px"
+            width="30px" />
+        </button>
+        <button id="menu-button">
+          <img
+            src="./iconhub/align-left.svg"
+            alt="bold"
+            height="30px"
+            width="30px" />
+        </button>
+        <button id="menu-button">
+          <img
+            src="./iconhub/align-center.svg"
+            alt="bold"
+            height="30px"
+            width="30px" />
+        </button>
+        <button id="menu-button">
+          <img
+            src="./iconhub/align-right.svg"
+            alt="bold"
+            height="30px"
+            width="30px" />
+        </button>
+      </div>
+    </form>
+    <textarea
+      placeholder="Enter your text here..."
+      id="content"
+      cols="200"
+      rows="30">
+    </textarea>
+    <div id="text-buttons">
+      <button>Save File</button>
+      <button>Clear Editor</button>
+      <button>Delete Note</button>
+    </div>
+  </body>
+</html>
