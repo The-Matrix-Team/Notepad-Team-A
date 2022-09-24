@@ -2,13 +2,19 @@
     margin: 0;
     padding: 0;
 }
+#root{
+    margin: 0;
+    background: rgb(9,9,121);
+    background: linear-gradient(128deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%); 
+    height: 100vh;
+    width: 100vw;
+}
 #nav{
-    margin: 20px;
     display: flex;
-    /* justify-content: space-between; */
 }
 .img{
     margin-top: 20px;
+    margin-left: 20px;
     display: inline-block;
 }
 li{
@@ -27,23 +33,23 @@ li{
     flex-wrap: wrap;
 }
 .note{
+    margin-top: 20px;
     margin-left: 20px;
-    /* margin-top: 20px; */
+    color: #ffffff;
 }
-.note1, .note2, .note3, .note4{
+.note-div{
     border: 2px solid black;
     display:inline-block;
     height: 200px;
     width: 200px;
     margin: 20px;
-    /* border-radius: 10px; */
     text-align: center;
+    transition: .5s ease;
 }
 .note1{
-    /* margin-top: 10px; */
-    padding-top: 4%;
-    height: 130px;
-}
+    display: flex;
+    justify-content: center;
+} 
 
 .main-div{
     display: flex;
@@ -51,23 +57,12 @@ li{
     margin: auto;
     align-items: center;
     height: 300px;
+   justify-content: center;
 }
 .note-div:hover{
-    height: 220px;
-    width: 210px;
-    border: 2px solid green;
-    /* background-color: rgb(84, 185, 84); */
-    border-radius: 10px;
-    margin-top: 0px;
-}
-
-.note1:hover{
-    height: 140px;
-    width: 210px;
-    border: 2px solid green;
-    /* background-color: rgb(84, 185, 84); */
-    border-radius: 10px;
-    margin-top: 0px;
+    transform: scale(1.1);
+    border: 2px solid #ffffff;
+    border-radius: 6px;
 }
 input{
     margin: 3px;
@@ -76,6 +71,8 @@ input{
     border-radius: 5px;
     border: none;
     font-size: 20px;
+    background-color: transparent;
+    color: white;
 }
 input:focus{
     outline: none;
@@ -83,6 +80,6 @@ input:focus{
 button{
     border-style: none;
     margin: 2px;
-    background-color: white;
+    background-color: transparent;
     border-radius: 2px;
 }
