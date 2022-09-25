@@ -17,8 +17,8 @@
 
 
       <!-- Font -->
-      <select id="fontName" class="adv-option-button">
-      </select>
+      <!-- <select id="fontName" class="adv-option-button">
+      </select> -->
 
       <select id="fontSize" class="adv-option-button">
 
@@ -78,7 +78,9 @@
       </button>
 
     </div>
-    <div id="textArea" contenteditable="true">
+    <input type="text" id="Title" placeholder="Enter Title Here" >
+
+    <div id="textArea" contenteditable="true" >
 
     </div>
     <div class="tools">
@@ -88,7 +90,11 @@
       <button id="saveNote">
         Save
       </button>
-      <button id="backButton">
+      <button id="copyButton" >
+        Copy
+      </button>
+      
+      <button id="backButton" onclick="history.back()">
         Back
       </button>
     </div>
