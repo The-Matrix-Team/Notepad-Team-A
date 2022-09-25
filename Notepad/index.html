@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +8,42 @@
     <title>Notepade list</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <div id="root">
-    <nav id="nav">
-        <img class="img" src="assets/img/create-note-alt.svg" alt="notepad">
-        <ul>
+        <nav id="nav">
+
+
             <!-- <li class="img"></li> -->
-            <li class="note">Notepad</li>
-            <li class="searchfield">
-            <button>
-               <img class="sch" src="assets/img/search-alt-3.svg" alt=""> 
+            <div class="title">
+                <img class="img" src="assets/img/create-note-alt.svg" alt="notepad">
+                Notepad
+            </div>
+            <div class="searchfield">
+                <input type="text" placeholder="Search">
+                <button>
+                    <img class="sch" src="assets/img/search-alt-3.svg" alt="">
+                </button>
+            </div>
+
+        </nav>
+        <div class="main-div">
+
+            <button class="note1 note-div" onclick="window.location.href='editor.html';" target="_blank"
+                value="click">
+                <svg class="plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon line" width="48"
+                    height="48">
+                    <path id="primary" d="M5,12H19M12,5V19"
+                        style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px">
+                    </path>
+                </svg>
             </button>
-               <input type="text" placeholder="Search">
-            </li>
-        </ul>
-    </nav>
-   <div class="main-div">
-   
-    <button class="note1 note-div">
-        <img class="plus" src="assets/img/plus.svg" alt="">
-    </button>
-  
-    <div class="note-div"></div>
-    <div class="note-div"></div>
-    <div class="note-div"></div>
+
+            <div class="note-div"></div>
+            <div class="note-div"></div>
+            <div class="note-div"></div>
+        </div>
     </div>
-</div>
 </body>
+
 </html>

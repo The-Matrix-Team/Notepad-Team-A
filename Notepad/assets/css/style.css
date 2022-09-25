@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* outline: 1px solid black; */
 }
 #root{
     margin: 0;
@@ -11,31 +12,35 @@
 }
 #nav{
     display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    justify-content: center;
+    position: relative;
 }
 .img{
-    margin-top: 20px;
-    margin-left: 20px;
     display: inline-block;
 }
 li{
     display: inline-block;
 }
 .searchfield{
-    margin-top: 30px;
-    margin-left: 450px;
     border: 1.5px solid black;
     height: 45px;
     width: 700px;
     border-radius:10px;
     color: rgb(190, 188, 188);
-    padding: 0px;
+    padding: 0 10px;
     display: flex;
     flex-wrap: wrap;
 }
-.note{
-    margin-top: 20px;
-    margin-left: 20px;
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     color: #ffffff;
+    position: absolute;
+    left: 30px;
 }
 .note-div{
     border: 2px solid black;
@@ -50,15 +55,22 @@ li{
 .main-div{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: auto;
     align-items: center;
-    height: 300px;
+    /* height: 300px; */
    justify-content: center;
 }
 .note-div:hover{
     transform: scale(1.1);
     border: 2px solid #ffffff;
     border-radius: 6px;
+}
+.plus path{
+    stroke: black;
+}
+.note-div:hover svg path{
+    stroke: #ffffff;
 }
 input{
     margin: 3px;
@@ -79,12 +91,33 @@ button{
     background-color: transparent;
     border-radius: 2px;
 }
-.plus{
-    height: 48px;
-    width: 48px;
-}
 .note1{
     display: flex;
     justify-content: center;
     align-items: center;
 } 
+@media(max-width:500px){
+    .main-div{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+        height: 300px;
+       justify-content: center;
+       height: auto;
+    }
+    .note-div{
+        border: 2px solid black;
+        height: 140px;
+        width: 230px;
+        margin: 15px;
+        text-align: center;
+        transition: .5s ease;
+    }
+    .searchfield{
+         display: none;
+    }
+    #nav{
+        height: 50px;
+    }
+}
