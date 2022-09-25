@@ -39,17 +39,13 @@ li{
 }
 .note-div{
     border: 2px solid black;
-    display:inline-block;
+    /* display:inline-block; */
     height: 200px;
     width: 200px;
     margin: 20px;
     text-align: center;
     transition: .5s ease;
 }
-.note1{
-    display: flex;
-    justify-content: center;
-} 
 
 .main-div{
     display: flex;
@@ -83,3 +79,12 @@ button{
     background-color: transparent;
     border-radius: 2px;
 }
+.plus{
+    height: 48px;
+    width: 48px;
+}
+.note1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
