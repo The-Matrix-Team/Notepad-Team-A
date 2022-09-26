@@ -106,7 +106,7 @@ saveButton.addEventListener("click", () => {
       id: id,
       title: title,
       content: content,
-      date: `${month} ${day}, ${year} ,${time}`,
+      date: `${month} ${day}, ${year}, ${time}`,
     };
     allNotesAPI.saveNote(note);
     alert("Note saved successfully");
