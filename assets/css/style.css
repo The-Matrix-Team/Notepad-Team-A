@@ -50,8 +50,8 @@ li{
 .note-div{
     /* border: 2px solid black; */
     /* display:inline-block; */
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 230px;
     /* margin: 20px; */
     text-align: center;
     transition: .5s ease;
@@ -66,7 +66,7 @@ li{
 .note-div:hover{
     transform: scale(1.1);
     /* border: 2px solid #ffffff; */
-    border-radius: 6px;
+    border-radius: 7px;
     color: #ffffff;
 }
 .delete{
@@ -78,6 +78,16 @@ li{
 .note-div:hover .delete{
     display: block;
 }
+.edit{
+    position: absolute;
+    bottom: 1px;
+    right: 35px;
+    display: none;
+}
+.note-div:hover .edit{
+    display: block;
+}
+
 .dsc{
    width: 100%;
    height: 50%;
@@ -138,7 +148,7 @@ button{
     }
     .note-div{
         border: 2px solid black;
-        height: 140px;
+        height: 340px;
         width: 230px;
         margin: 15px;
         text-align: center;
