@@ -1,4 +1,5 @@
 const allNotes = document.querySelector(".allNotes");
+const searchBar = document.getElementById("SearchBar");
 
 function deleteNote(id) {
   console.log("delete");
@@ -27,13 +28,11 @@ function showNotes() {
           </button>
         </div>
  
-
   `;
 
     allNotes.insertAdjacentHTML("afterend", currentNote);
   });
 }
-
 showNotes();
 
 (function () {
