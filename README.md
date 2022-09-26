@@ -8,6 +8,7 @@
 
 - [Contents](#table-of-contents)
   - [About The Project](#about-the-project)
+  - [Live Demo](#live-demo)
     - [Project Walkthrough](#app-walkthrough)
     - [Features](#extra-features)
   - [Built With](#built-with)
@@ -20,6 +21,10 @@
 ## About The Project
 
 A Note taking app. It help to create and store notes of user
+
+### Live Demo
+
+##### ![Live demo](./assets/img/Recording.gif):
 
 ### APP Walkthrough
 
