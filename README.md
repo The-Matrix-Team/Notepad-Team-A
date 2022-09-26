@@ -27,3 +27,5 @@ Features:
 
 Images till now:
 ![editor](./assets/img/editor.png)
+
+[Deploy](https://matrix-team.netlify.app/)
