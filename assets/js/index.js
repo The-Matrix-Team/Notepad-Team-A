@@ -5,7 +5,7 @@ function deleteNote(id) {
   const notes = JSON.parse(localStorage.getItem("notesapp-notes"));
   const newNotes = notes.filter((note) => note.id != id);
   localStorage.setItem("notesapp-notes", JSON.stringify(newNotes));
-  location.reload();
+  location.reload(true / false);
 }
 
 function showNotes() {
@@ -35,3 +35,11 @@ function showNotes() {
 }
 
 showNotes();
+
+(function () {
+  window.onpageshow = function (event) {
+    if (event.persisted) {
+      window.location.reload();
+    }
+  };
+})();

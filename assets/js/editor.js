@@ -95,17 +95,18 @@ saveButton.addEventListener("click", () => {
   let title = titleArea.value;
   let content = writingArea.innerHTML;
 
-  let currentDate = new Date(),
-    month = months[currentDate.getMonth()],
-    day = currentDate.getDate(),
-    year = currentDate.getFullYear();
+  let currentDate = new Date();
+  let time = currentDate.getHours() + ":" + currentDate.getMinutes();
+  let month = months[currentDate.getMonth()];
+  let day = currentDate.getDate();
+  let year = currentDate.getFullYear();
 
   if (content !== "" && title !== "") {
     let note = {
       id: id,
       title: title,
       content: content,
-      date: `${month} ${day}, ${year}`,
+      date: `${month} ${day}, ${year} ,${time}`,
     };
     allNotesAPI.saveNote(note);
     alert("Note saved successfully");
