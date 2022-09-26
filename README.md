@@ -24,7 +24,7 @@ A Note taking app. It help to create and store notes of user
 
 ### Live Demo
 
-##### ![Live demo](./assets/img/Recording.gif =250x250):
+##### ![Live demo](./assets/img/Recording.gif):
 
 ### APP Walkthrough
 
